@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Succuss</title>
+</head>
+<body>
+    {% if messages %}
+        {% for message in messages %}
+            <p>{{ message }}</p>
+        {% endfor %}
+    {% endif %}
+    {% for sch in data %}
+        {% for field in sch %}
+            <p>{{ field }}</p>
+        {% endfor %}
+    {% endfor %}
+</body>
+</html>
